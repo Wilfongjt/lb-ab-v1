@@ -9,6 +9,7 @@
       <li>configure nuxt.config.js, add  server: {
          port: process.env.PORT || 3000 // default: localhost
       }</li>
+      
       <div class="links">
         <a
           href="https://nuxtjs.org/"
