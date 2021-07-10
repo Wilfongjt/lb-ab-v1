@@ -6,4 +6,10 @@ describe('Logo', () => {
     const wrapper = mount(Logo)
     expect(wrapper.vm).toBeTruthy()
   })
+
 })
+/*
+  test('Environment Variables', () => {
+    expect(process.env.HAPI_URL).not.toBeUndefined();
+  })
+  */

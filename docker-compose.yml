@@ -5,22 +5,46 @@ services:
     build:
       context: ./lb-a
     command: >
-      bash -c "npm install && npm run dev" 
+      bash -c "npm install && npm install nodemon && npm run dev"
     volumes:
-      - ./:/usr/src
+      - ./lb-a:/usr/src
     ports:
       - 3000:3000
     environment:
-      - LB_ENV=
-  lb-b:
-    image: wilfongjt/lb-b
+      - NODE_ENV=${NODE_ENV}
+      - LB_ENV=development
+      - LB_A_PORT=${LB_A_PORT}
+      - LB_HAPI=${HAPI_URL}
+      - HAPI_URL=http://${HAPI_HOST}:${HAPI_PORT}
+    links:
+      - hapi:hapi
+
+  #lb-b:
+  #  image: wilfongjt/lb-b
+  #  build:
+  #    context: ./lb-b
+  #  command: >
+  #    bash -c "npm install && npm install nodemon && npm run dev"
+  #  volumes:
+  #    - ./lb-b:/usr/src
+  #  ports:
+  #    - 3001:3001
+  #  environment:
+  #    - NODE_ENV=${NODE_ENV}
+  #    - LB_ENV=development
+  #    - LB_B_PORT=${LB_B_PORT}
+
+  hapi:
+    image: wilfongjt/hapi-api
     build:
-      context: ./lb-b
+      context: ./hapi-api
     command: >
-      bash -c "npm install && npm run dev" 
+      sh -c "npm install && npm install nodemon && npm run dev"
     volumes:
-      - ./:/usr/src
+      - ./hapi-api:/usr/src/api
     ports:
-      - 3000:3001
+      - 5555:5555
     environment:
-      - LB_ENV=
+      - NODE_ENV=${NODE_ENV}
+      - HAPI_PORT=${HAPI_PORT}
+      - HAPI_HOST=${HAPI_HOST}

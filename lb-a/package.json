@@ -7,13 +7,17 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "test1": "jest --coverage",
     "test": "jest"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.10",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.14.5",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.5.0",
