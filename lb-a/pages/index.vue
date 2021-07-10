@@ -9,7 +9,8 @@
       <li>configure nuxt.config.js, add  server: {
          port: process.env.PORT || 3000 // default: localhost
       }</li>
-      
+      <li>Heroku Settings: HOST 0.0.0.0</li>
+
       <div class="links">
         <a
           href="https://nuxtjs.org/"
