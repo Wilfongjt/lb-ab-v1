@@ -14,7 +14,7 @@
         fill="#2F495E"
       />
     </svg>
-    <h1>HI</h1>
+    <h1>HI</h1><h1>HI</h1>
   </div>
 </template>
 
