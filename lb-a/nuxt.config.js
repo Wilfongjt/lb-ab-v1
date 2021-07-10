@@ -2,6 +2,9 @@ export default {
   env: {
     HAPI_URL: process.env.HAPI_URL
   },
+  server: {
+     port: process.env.PORT || 3000 // default: localhost
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'lb-a',
