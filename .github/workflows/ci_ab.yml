@@ -45,7 +45,7 @@ jobs:
           heroku_email: "wilfongjt@gmail.com"
           appdir: "lb-b"  
        - uses: akhileshns/heroku-deploy@v3.6.8 # This is the heroku deploy action
-        with:
+         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "hapi-api" #Must be unique in Heroku
           heroku_email: "wilfongjt@gmail.com"
