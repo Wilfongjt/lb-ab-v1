@@ -1,4 +1,5 @@
 export default {
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'lb-b',
@@ -33,5 +34,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+  // Port Change https://nuxtjs.org/docs/2.x/features/configuration
+  server: {
+    port: process.env.LB_B_PORT || 3000 // default: 3000
   }
 }

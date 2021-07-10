@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.9",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {

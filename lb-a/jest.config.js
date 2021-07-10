@@ -1,4 +1,5 @@
 module.exports = {
+  verbose: true,
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
@@ -9,9 +10,16 @@ module.exports = {
     'vue',
     'json'
   ],
+  testEnvironment: 'jest-environment-node',
+  /*
+  "transform": {
+      "^[^.]+.vue$": "vue-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+  */
   transform: {
-    '^.+\\.js$': 'babel-jest',
-    '.*\\.(vue)$': 'vue-jest'
+    '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
+    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
   },
   collectCoverage: true,
   collectCoverageFrom: [
