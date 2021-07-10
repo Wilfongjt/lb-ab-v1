@@ -57,7 +57,8 @@ import salutation_route from './routes/salutation_route.js'; // example
 
 //const lbEnv = new LbEnv();
 //const secret = lbEnv.get('API_JWT_SECRET');
-const port = process.env.HAPI_PORT || 5555;
+//           heroku              docker
+const port = process.env.PORT || 5555;
 const host = process.env.HAPI_HOST || '0.0.0.0';
 
 const server = Hapi.Server({ host: host, port: port});
