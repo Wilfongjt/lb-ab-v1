@@ -5,12 +5,13 @@
       <h1 class="title">
         lb-a
       </h1>
-      <li>run default nuxtjs</li>
-      <li>configure nuxt.config.js, add  server: {
-         port: process.env.PORT || 3000 // default: localhost
-      }</li>
-      <li>Heroku Settings: HOST 0.0.0.0</li>
-
+      <ul>
+        <li>run default nuxtjs</li>
+        <li>configure nuxt.config.js, add  server: {
+           port: process.env.PORT || 3000 // default: localhost
+        }</li>
+        <li>Heroku Settings: HOST 0.0.0.0</li>
+      </ul>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
