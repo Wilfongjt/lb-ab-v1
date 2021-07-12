@@ -13,7 +13,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
-    "nodemon": "^2.0.11",
+    "nodemon": "^2.0.12",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
