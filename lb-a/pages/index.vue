@@ -5,13 +5,20 @@
       <h1 class="title">
         lb-a
       </h1>
+
       <ul>
         <li>run default nuxtjs</li>
+
         <li>configure nuxt.config.js, add  server: {
            port: process.env.PORT || 3000 // default: localhost
         }</li>
+
         <li>Heroku Settings: HOST 0.0.0.0</li>
+
+        <li>hapi-api ... install npm install --save-dev @babel/preset-react in package.json</li>
+        <li>.babelrc ... "presets": ["@babel/preset-react","@babel/preset-env"]</li>
       </ul>
+
       <div class="links">
         <a
           href="https://nuxtjs.org/"
