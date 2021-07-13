@@ -12,7 +12,7 @@
         <li>configure nuxt.config.js, add  server: {
            port: process.env.PORT || 3000 // default: localhost
         }</li>
-
+        <li>Hapi-api</li>
         <li>Heroku Settings: HOST 0.0.0.0</li>
 
         <li>hapi-api ... install npm install --save-dev @babel/preset-react in package.json</li>
