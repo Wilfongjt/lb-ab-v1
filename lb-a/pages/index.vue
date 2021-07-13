@@ -17,6 +17,9 @@
 
         <li>hapi-api ... install npm install --save-dev @babel/preset-react in package.json</li>
         <li>.babelrc ... "presets": ["@babel/preset-react","@babel/preset-env"]</li>
+        <li>Support for the experimental syntax 'jsx' isn't currently enabled</li>
+        <li>npm install --save-dev @babel/plugin-syntax-jsx</li>
+        <li>  "plugins": ["@babel/plugin-syntax-jsx","@babel/plugin-transform-runtime"]</li>
       </ul>
 
       <div class="links">
