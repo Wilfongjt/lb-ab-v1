@@ -20,6 +20,7 @@
         <li>Support for the experimental syntax 'jsx' isn't currently enabled</li>
         <li>npm install --save-dev @babel/plugin-syntax-jsx</li>
         <li>  "plugins": ["@babel/plugin-syntax-jsx","@babel/plugin-transform-runtime"]</li>
+        <li> Warning: heroku update available from 7.54.1 to 7.56.1.</li>
       </ul>
 
       <div class="links">
